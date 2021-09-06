@@ -1,0 +1,14 @@
+
+.navbar-cva {
+    justify-content: flex-end;
+}
+
+.cva-logo {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.temp {
+    width:500px;
+    margin: auto;
+}
