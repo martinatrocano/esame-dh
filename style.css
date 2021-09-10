@@ -8,7 +8,13 @@
     border-radius: 50%;
 }
 
-.temp {
-    width:500px;
-    margin: auto;
+.search-box {
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+#search-addon {
+    padding-top: 11px;
+    padding-bottom: 11px;
 }
