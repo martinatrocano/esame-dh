@@ -86,8 +86,19 @@
               <li><label><input type="checkbox">Fabio Massaccesi</label></li>
               
             </ul>
+
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              Year of Publication
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><label><input type="checkbox">1990-2000</label></li>
+              <li><label><input type="checkbox">1980-1990</label></li>
+              <li><label><input type="checkbox">1970-1980</label></li>
+              <li><label><input type="checkbox">1960-1970</label></li>
+              
+            </ul>
           </div>
-        </div>
+
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
             Edition
@@ -101,17 +112,6 @@
           </ul>
         </div>
       </div>
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-        Year of Publication
-      </button>
-      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-        <li><label><input type="checkbox">1990-2000</label></li>
-        <li><label><input type="checkbox">1980-1990</label></li>
-        <li><label><input type="checkbox">1970-1980</label></li>
-        <li><label><input type="checkbox">1960-1970</label></li>
-        
-      </ul>
-    </div>
         <div class="col-8">
           <section class="d-flex justify-content-center gy-5">
             <div class="input-group rounded search-box">
@@ -188,16 +188,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-2">
-          <h2>Tag Cloud</h2>
-          
-          <div id="chartdiv"></div>
-        </div>
-      </div>
-  </main>
-  
-  <nav aria-label="...">
+            
+  <nav aria-label="..." class="d-flex justify-content-center mt-3 gy-5">
     <ul class="pagination pagination-sm">
       <li class="page-item active" aria-current="page">
         <span class="page-link">1</span>
@@ -206,6 +198,22 @@
       <li class="page-item"><a class="page-link" href="#">3</a></li>
     </ul>
   </nav>
+        
+        </div>
+        
+        <div class="col-2">
+          <h2>Tag Cloud</h2>
+          
+          <div id="chartdiv"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+      </div>
+  </main>
+
 
   <div class="container-fluid">
     <footer class="py-5">
