@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'ufontscombodonimtblack1';
+	src: url('./ufontscombodonimtblack1.eot');
+	src: local('ufontscombodonimtblack1'), url('./ufontscombodonimtblack1.woff') format('woff'), url('./ufontscombodonimtblack1.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_19037">Text with this font applied</p> */
+.fontsforweb_fontid_19037 {
+	font-family: 'ufontscombodonimtblack1' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */
