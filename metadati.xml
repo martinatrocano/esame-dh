@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns:dc="http://purl.org/dc/elements/1.1/" xml:id="BIBIT">
+<author xml:id="BIBIT-18">
+<text xml:id="BIBIT-18-01">
+<dc:title>TITOLO</dc:title>
+<dc:creator>AUTORE</dc:creator>
+<dc:date>DATA</dc:date>
+<dc:subject></dc:subject>
+<dc:subject></dc:subject>
+<dc:description></dc:description>
+<dc:publisher></dc:publisher>
+<dc:type></dc:type>
+<dc:format></dc:format>
+<dc:identifier></dc:identifier>
+<dc:language></dc:language>
+<dc:coverage></dc:coverage>
+<dc:rights></dc:rights>
+</text>
+<text xml:id="BIBIT-18-02">
+<dc:title></dc:title>
+<dc:creator></dc:creator>
+<dc:date></dc:date>
+<dc:subject></dc:subject>
+<dc:subject></dc:subject>
+<dc:description></dc:description>
+<dc:publisher></dc:publisher>
+<dc:type></dc:type>
+<dc:format></dc:format>
+<dc:identifier></dc:identifier>
+<dc:language></dc:language>
+<dc:coverage></dc:coverage>
+<dc:rights></dc:rights>
+</text>
+</author>
+</library>
