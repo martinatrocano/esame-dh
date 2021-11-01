@@ -44,3 +44,24 @@
     src: url('./font/ufontscombodonimtblack1.eot');
 	src: local('ufontscombodonimtblack1'), url('./font/ufontscombodonimtblack1.woff') format('woff'), url('./font/ufontscombodonimtblack1.ttf') format('truetype');
   }
+
+  .card-photo {
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  .external {
+    position: relative;
+    bottom: 3px;
+  }
+
+  .main-text-component {
+    background-color: #d87c4a;
+  }
+
+  .btn-themed,
+  .btn-themed:hover,
+  .btn-themed:active,
+  .btn-themed:focus {
+      background: #4b5c78;
+  }
