@@ -33,3 +33,14 @@
 .info-content {
     color: #999;
 }
+
+.logo-title{
+    font-size: 38px;
+    font-family: 'Bodoni MT Black';
+}
+
+@font-face {
+    font-family: 'Bodoni MT Black';
+    src: url('./font/ufontscombodonimtblack1.eot');
+	src: local('ufontscombodonimtblack1'), url('./font/ufontscombodonimtblack1.woff') format('woff'), url('./font/ufontscombodonimtblack1.ttf') format('truetype');
+  }
