@@ -4,7 +4,7 @@ const basilica = {
     long: 11.34921856515586,
     title: "",
     place: "Basilica di San Giacomo Maggiore",
-    description: "adsasd"
+    description: "Mezzaratta Fresco"
 }
 
 // Pinacoteca Nazionale
@@ -13,7 +13,7 @@ const pinacoteca = {
     long: 11.353533252183288,
     title: "",
     place: "Pinacoteca Nazionale",
-    description: "adsasd"
+    description: "<a href='photoarchive#saint_george' Saint George and the Dragon, Vitale da Bologna /a>" 
 }
 
 const markers = [basilica, pinacoteca];
