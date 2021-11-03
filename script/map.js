@@ -45,13 +45,12 @@ $(function () {
             icon: markerImage
         });
 
-        var contentString1 = 
-        `<div class="info-window">
-            <h3>${basilica.place}</h3>
-            <div class="info-content">
-                <p>${basilica.description}</p>
-            </div>
-        </div>`;
+        var contentString1 = '<div class="info-window">' +
+                '<h3>' + basilica.place + '</h3>' +
+                '<div class="info-content">' +
+                '<p>' + basilica.description + '</p>' +
+                '</div>' +
+                '</div>';
 
         var infowindow1 = new google.maps.InfoWindow({
             content: contentString1,
@@ -69,13 +68,12 @@ $(function () {
             icon: markerImage
         });
 
-        var contentString2 = 
-        `<div class="info-window">
-            <h3>${pinacoteca.place}</h3>
-            <div class="info-content">
-                <p>${pinacoteca.description}</p>
-            </div>
-        </div>`;
+        var contentString2 = '<div class="info-window">' +
+                '<h3>' + pinacoteca.place + '</h3>' +
+                '<div class="info-content">' +
+                '<p>' + pinacoteca.description + '</p>' +
+                '</div>' +
+                '</div>';
 
         var infowindow2 = new google.maps.InfoWindow({
             content: contentString2,

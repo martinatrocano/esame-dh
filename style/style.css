@@ -1,6 +1,8 @@
 /* regole di stile */
-.navbar-cva {
-    justify-content: flex-end;
+@font-face {
+    font-family: 'Bodoni MT Black';
+    src: url('./font/ufontscombodonimtblack1.eot');
+    src: local('ufontscombodonimtblack1'), url('./font/ufontscombodonimtblack1.woff') format('woff'), url('./font/ufontscombodonimtblack1.ttf') format('truetype');
 }
 
 .cva-logo {
@@ -8,49 +10,35 @@
     border-radius: 50%;
 }
 
-.search-box {
-    max-width: 500px;
-    display: flex;
-    align-items: center;
-}
-
-#search-addon {
-    padding-top: 11px;
-    padding-bottom: 11px;
-}
-
-/* stile per la mappa */
-#map {
-    width: 100%;
-    height: 400px; 
-    margin-top: 40px; 
-    margin-bottom: 40px;
-}
-
-.info-window {
-    font-family: 'Montserrat', sans-serif;
-}
-.info-content {
-    color: #999;
-}
-
 .logo-title{
     font-size: 38px;
     font-family: 'Bodoni MT Black';
 }
 
-@font-face {
-    font-family: 'Bodoni MT Black';
-    src: url('./font/ufontscombodonimtblack1.eot');
-	src: local('ufontscombodonimtblack1'), url('./font/ufontscombodonimtblack1.woff') format('woff'), url('./font/ufontscombodonimtblack1.ttf') format('truetype');
-  }
+.search-box {
+    width: 500px;
+}
+
+#search-addon {
+    /* spazio sopra e sotto lente di ingrandimento ricerca */
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
 
 .card-photo {
-max-height: 250px;
-object-fit: cover;
+    /* dimensione e stile immagine dell'archivio foto */
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.card-photo-book {
+    /* dimensione e stile immagine della biblioteca */
+    max-height: 500px;
+    object-fit: cover;
 }
 
 .external {
+    /* icona link esterni allineata verticalmente */
     position: relative;
     bottom: 3px;
 }
@@ -69,77 +57,6 @@ object-fit: cover;
 .btn-themed:active,
 .btn-themed:focus {
     background: #4b5c78;
-}/* regole di stile */
-.navbar-cva {
-    justify-content: flex-end;
-}
-
-.cva-logo {
-    width: 150px;
-    border-radius: 50%;
-}
-
-.search-box {
-    max-width: 500px;
-    display: flex;
-    align-items: center;
-}
-
-#search-addon {
-    padding-top: 11px;
-    padding-bottom: 11px;
-}
-
-/* stile per la mappa */
-#map {
-    width: 100%;
-    height: 400px; 
-    margin-top: 40px; 
-    margin-bottom: 40px;
-}
-
-.info-window {
-    font-family: 'Montserrat', sans-serif;
-}
-.info-content {
-    color: #999;
-}
-
-.logo-title{
-    font-size: 38px;
-    font-family: 'Bodoni MT Black';
-}
-
-@font-face {
-    font-family: 'Bodoni MT Black';
-    src: url('./font/ufontscombodonimtblack1.eot');
-	src: local('ufontscombodonimtblack1'), url('./font/ufontscombodonimtblack1.woff') format('woff'), url('./font/ufontscombodonimtblack1.ttf') format('truetype');
-  }
-
-.card-photo {
-    max-height: 250px;
-    object-fit: cover;
-}
-
-.external {
-    position: relative;
-    bottom: 3px;
-}
-
-.main-component {
-    background-color: #d87c4a;
-}
-
-.main-component-alternative {
-    background-color: #4c5d79;
-}
-
-
-.btn-themed,
-.btn-themed:hover,
-.btn-themed:active,
-.btn-themed:focus {
-    background: #4b5c78;
 }
 
 .btn-themed-primary,
@@ -149,4 +66,12 @@ object-fit: cover;
     background-color: #d87c4a;
     border-color: #a55d36;
     font-weight: bold;
+}
+
+/* stile per la mappa */
+#map {
+    width: 100%;
+    height: 400px; 
+    margin-top: 40px; 
+    margin-bottom: 40px;
 }
