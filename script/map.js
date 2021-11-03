@@ -13,7 +13,7 @@ const pinacoteca = {
     long: 11.353533252183288,
     title: "",
     place: "Pinacoteca Nazionale",
-    description: "<a href='photoarchive#saint_george' Saint George and the Dragon, Vitale da Bologna /a>" 
+    description: "<a href='photoarchive#saint_george'> Saint George and the Dragon, Vitale da Bologna </a>" 
 }
 
 const markers = [basilica, pinacoteca];
