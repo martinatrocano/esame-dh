@@ -39,13 +39,13 @@ $(function () {
         var markerImage = 'immagini/marker.png';
             
         // marker 1
-        var marker = new google.maps.Marker({
+        var marker1 = new google.maps.Marker({
             position: new google.maps.LatLng(basilica.lat, basilica.long),
             map: map,
             icon: markerImage
         });
 
-        var contentString = 
+        var contentString1 = 
         `<div class="info-window">
             <h3>${basilica.place}</h3>
             <div class="info-content">
@@ -54,22 +54,22 @@ $(function () {
         </div>`;
 
         var infowindow1 = new google.maps.InfoWindow({
-            content: contentString,
+            content: contentString1,
             maxWidth: 400
         });
 
-        marker.addListener('click', function () {
-            infowindow1.open(map, marker);
+        marker1.addListener('click', function () {
+            infowindow1.open(map, marker1);
         });
 
         // marker 2
-        var marker = new google.maps.Marker({
+        var marker2 = new google.maps.Marker({
             position: new google.maps.LatLng(pinacoteca.lat, pinacoteca.long),
             map: map,
             icon: markerImage
         });
 
-        var contentString = 
+        var contentString2 = 
         `<div class="info-window">
             <h3>${pinacoteca.place}</h3>
             <div class="info-content">
@@ -78,12 +78,12 @@ $(function () {
         </div>`;
 
         var infowindow2 = new google.maps.InfoWindow({
-            content: contentString,
+            content: contentString2,
             maxWidth: 400
         });
 
-        marker.addListener('click', function () {
-            infowindow2.open(map, marker);
+        marker2.addListener('click', function () {
+            infowindow2.open(map, marker2);
         });
 
 
