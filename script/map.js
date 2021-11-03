@@ -19,9 +19,6 @@ var mapCenter = {
     long: 11.351592316494536,               // longitudine centro di Bologna
 }
 
-// metto insieme i nostri punti di interesse
-var markers = [basilica, pinacoteca];
-
 // codice da https://bootstrapious.com/p/google-maps-and-bootstrap-tutorial
 $(function () {
 
@@ -56,13 +53,13 @@ $(function () {
             </div>
         </div>`;
 
-        var infowindow = new google.maps.InfoWindow({
+        var infowindow1 = new google.maps.InfoWindow({
             content: contentString,
             maxWidth: 400
         });
 
         marker.addListener('click', function () {
-            infowindow.open(map, marker);
+            infowindow1.open(map, marker);
         });
 
         // marker 2
@@ -80,13 +77,13 @@ $(function () {
             </div>
         </div>`;
 
-        var infowindow = new google.maps.InfoWindow({
+        var infowindow2 = new google.maps.InfoWindow({
             content: contentString,
             maxWidth: 400
         });
 
         marker.addListener('click', function () {
-            infowindow.open(map, marker);
+            infowindow2.open(map, marker);
         });
 
 
