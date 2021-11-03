@@ -3,33 +3,32 @@
 <head>
   <title>Progetto Digital Humanities</title>
 
-
-
   <!-- Caricamento di bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
 
-  <!-- caricamento jQuery, file per definire il comportamento del sito -->
+  <!-- jQuery, file per definire il comportamento del sito -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
 
-  <!-- caricamento amchart, file per definire il comportamento delle tagcloud -->
+  <!-- amchart, file per definire il comportamento delle tagcloud -->
   <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
   <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
   <script src="https://cdn.amcharts.com/lib/4/plugins/wordCloud.js"></script>
   <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
 
-
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style/style.css" />
 </head>
 
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#" class="d-flex flex-column bd-highlight mb-3">
+      <a class="navbar-brand logo-title" href="https://martinatrocano.github.io/esame-dh/"
+        class="d-flex flex-column bd-highlight mb-3">
         <img src="immagini/logo2.jpeg" alt="Carlo Volpe Archive - Logo" class="cva-logo" />
         Carlo Volpe Archive
       </a>
@@ -40,14 +39,15 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-          <li class="nav-item"><a aria-current="page" class="nav-link" href="#">About us</a></li>
+          <li class="nav-item"><a aria-current="page" class="nav-link" href="aboutus">About us</a></li>
           <li class="nav-item"><a aria-current="page" class="nav-link" href="library">Library</a></li>
           <li class="nav-item"><a aria-current="page" class="nav-link" href="photoarchive">Photo Archive</a></li>
           <li class="nav-item"><a aria-current="page" class="nav-link" href="timeline">Timeline</a></li>
           <li class="nav-item"><a aria-current="page" class="nav-link" href="map">Map</a></li>
-          <li class="nav-item"><a aria-current="page" class="nav-link" href="https://trecentobolognese.archiui.com/mostre/prova">Exhibition</a></li>
-          <li class="nav-item"><a aria-current="page" class="nav-link" href="#">Percorsi Trasversali | Wide paths</a>
-          </li>
+          <li class="nav-item"><a aria-current="page" class="nav-link"
+              href="https://trecentobolognese.archiui.com/mostre/prova" target="_blank">Exhibition <i
+                class="bi bi-box-arrow-up-right external"></i>
+            </a></li>
         </ul>
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -76,17 +76,19 @@
         <div class="col-2">
           <h2>Filter</h2>
           <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Author
             </button>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
               <li><label><input type="checkbox">Vitale Da Bologna</label></li>
               <li><label><input type="checkbox">Giotto</label></li>
               <li><label><input type="checkbox">Master of 1333</label></li>
-              
+
             </ul>
 
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Year
             </button>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
@@ -94,32 +96,34 @@
               <li><label><input type="checkbox">1980-1990</label></li>
               <li><label><input type="checkbox">1970-1980</label></li>
               <li><label><input type="checkbox">1960-1970</label></li>
-              
+
             </ul>
           </div>
 
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-            Medium
-          </button>
-          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-            <li><label><input type="checkbox">Oil on canvas</label></li>
-            <li><label><input type="checkbox">Tempera on wood</label></li>
-            
-          </ul>
-        </div>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Medium
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><label><input type="checkbox">Oil on canvas</label></li>
+              <li><label><input type="checkbox">Tempera on wood</label></li>
+
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Location
             </button>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
               <li><label><input type="checkbox">San Giacomo Cathedral</label></li>
               <li><label><input type="checkbox">Pinacoteca Nazionale di Bologna</label></li>
               <li><label><input type="checkbox">Musei degli Uffizi</label></li>
-              
+
             </ul>
           </div>
-      </div>
+        </div>
         <div class="col-8">
           <section class="d-flex justify-content-center gy-5">
             <div class="input-group rounded search-box">
@@ -133,39 +137,41 @@
           <div id="raccolta" class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col gy-5">
               <div id="saint_george" class="card h-100">
-                <img src="immagini/san giorgio e il drago.PNG" class="card-img-top card-photo" alt="Immagine di copertina">
+                <img src="immagini/san giorgio e il drago.PNG" class="card-img-top card-photo"
+                  alt="Immagine di copertina">
                 <div class="card-body">
                   <h5 class="card-title">Saint George and the dragon</h5>
                   <p class="card-text">If the evolution and the history of XIV century Bolognese painting
-                     has been enduringly debated regarding issues of chronology and of the identity of the 
-                     main characters, the influence of one painter is not to be discussed... </p>
+                    has been enduringly debated regarding issues of chronology and of the identity of the
+                    main characters, the influence of one painter is not to be discussed... </p>
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">Vitale Da Bologna</li>
                     <li class="list-group-item">Pinacoteca Nazionale of Bologna</li>
                     <li class="list-group-item">1330-1335</li>
                   </ul>
-                    <a href="#" class="card-link">Read more</a>
-                    <a href="#" class="card-link">Show Metadata</a>
+                  <a href="#" class="card-link">Read more</a>
+                  <a href="#" class="card-link">Show Metadata</a>
 
                 </div>
               </div>
             </div>
             <div class="col gy-5">
               <div class="card h-100">
-                <img src="immagini/Giotto-Polittico-di-Bologna.png" class="card-img-top card-photo" alt="immagine di copertina">
+                <img src="immagini/Giotto-Polittico-di-Bologna.png" class="card-img-top card-photo"
+                  alt="immagine di copertina">
                 <div class="card-body">
                   <h5 class="card-title">Polyptych, Virgin and Child enthroned with Saints
-                </h5>
-                  <p class="card-text">The discovery of the Master of 1333 and the new consequent chronology of the 
-                    Trecento Bolognese shed light on the relationship with Giotto, a prominent aspect of medieval 
+                  </h5>
+                  <p class="card-text">The discovery of the Master of 1333 and the new consequent chronology of the
+                    Trecento Bolognese shed light on the relationship with Giotto, a prominent aspect of medieval
                     art development in Bologna... </p>
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">Giotto</li>
                     <li class="list-group-item">Pinacoteca Nazionale of Bologna</li>
                     <li class="list-group-item">1333-1334</li>
                   </ul>
-                    <a href="#" class="card-link">Read more</a>
-                    <a href="#" class="card-link">Show Metadati</a>
+                  <a href="#" class="card-link">Read more</a>
+                  <a href="#" class="card-link">Show Metadati</a>
 
 
                 </div>
@@ -176,16 +182,16 @@
                 <img src="immagini/pseudo dalmasio.PNG" class="card-img-top card-photo" alt="immagine di copertina">
                 <div class="card-body">
                   <h5 class="card-title">Polyptych of the Crucifixion</h5>
-                  <p class="card-text">The attribution to Dalmasio di Iacopo di Scannabechhi, or pseudo-Dalmasio, 
-                    has been extensively discussed by the critics. In a first phase of the debate, Roberto Longhi 
-                    used to assign a group of  panel paintings and fresco... </p>
+                  <p class="card-text">The attribution to Dalmasio di Iacopo di Scannabechhi, or pseudo-Dalmasio,
+                    has been extensively discussed by the critics. In a first phase of the debate, Roberto Longhi
+                    used to assign a group of panel paintings and fresco... </p>
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">Dalmasio di Iacopo di Scannabecchi (o pseudo-Dalmasio)</li>
                     <li class="list-group-item">Pinacoteca Nazionale of Bologna</li>
                     <li class="list-group-item">1335-1340</li>
                   </ul>
                   <a href="#" class="card-link">Read more</a>
-                    <a href="#" class="card-link">Show Metadata</a>
+                  <a href="#" class="card-link">Show Metadata</a>
 
                 </div>
               </div>
@@ -194,79 +200,84 @@
               <div class="card h-100">
                 <img src="immagini/frescos.PNG" class="card-img-top card-photo" alt="immagini di copertina">
                 <div class="card-body">
-                  <h5 class="card-title">San Giacomo's Frescoes 
-                </h5>
-                  <p class="card-text">The masterpieces were walled up in 1477 and they were rediscovered only in 1826-27 
-                    after a restoration campaign. Nevertheless, the critique mostly ignored the frescos till 1967 
+                  <h5 class="card-title">San Giacomo's Frescoes
+                  </h5>
+                  <p class="card-text">The masterpieces were walled up in 1477 and they were rediscovered only in
+                    1826-27
+                    after a restoration campaign. Nevertheless, the critique mostly ignored the frescos till 1967
                     when Carlo Volpe began to promote them as evidence of the late...</p>
-                <ul class="list-group list-group-flush">
+                  <ul class="list-group list-group-flush">
                     <li class="list-group-item">Undefinited Bolognese Artist</li>
                     <li class="list-group-item"> San Giacomo Maggiore Cathedral</li>
                     <li class="list-group-item">Late 1200</li>
                   </ul>
                   <a href="#" class="card-link">Read more</a>
-                    <a href="#" class="card-link">Show Metadata</a>
+                  <a href="#" class="card-link">Show Metadata</a>
 
                 </div>
               </div>
             </div>
           </div>
-            
-  <nav aria-label="..." class="d-flex justify-content-center mt-3 gy-5">
-    <ul class="pagination pagination-sm">
-      <li class="page-item active" aria-current="page">
-        <span class="page-link">1</span>
-      </li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-    </ul>
-  </nav>
-        
+
+          <nav aria-label="..." class="d-flex justify-content-center mt-3 gy-5">
+            <ul class="pagination pagination-sm">
+              <li class="page-item active" aria-current="page">
+                <span class="page-link">1</span>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+            </ul>
+          </nav>
+
         </div>
-        
+
         <div class="col-2">
           <h2>Tag Cloud</h2>
-          
+
           <div id="chartdiv"></div>
         </div>
       </div>
 
     </div>
-  </div>
+    </div>
 
-      </div>
+    </div>
   </main>
 
 
-  <div class="container-fluid">
+  <div class="container-fluid p-5 main-component-alternative text-white">
     <footer class="py-5">
       <div class="row">
         <div class="col-2">
           <h5>Section</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About us</a></li>
-            <li class="nav-item mb-2"><a href="library" class="nav-link p-0 text-muted">Library</a></li>
-            <li class="nav-item mb-2"><a href="photoarchive" class="nav-link p-0 text-muted">Photo Archive</a></li>
-            <li class="nav-item mb-2"><a href="timeline" class="nav-link p-0 text-muted">Timeline</a></li>
-            <li class="nav-item mb-2"><a href="map" class="nav-link p-0 text-muted">Map</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Exhibition</a></li>
+            <li class="nav-item mb-2"><a href="aboutus" class="nav-link p-0 text-white">About us</a></li>
+            <li class="nav-item mb-2"><a href="library" class="nav-link p-0 text-white">Library</a></li>
+            <li class="nav-item mb-2"><a href="photoarchive" class="nav-link p-0 text-white">Photo Archive</a></li>
+            <li class="nav-item mb-2"><a href="timeline" class="nav-link p-0 text-white">Timeline</a></li>
+            <li class="nav-item mb-2"><a href="map" class="nav-link p-0 text-white">Map</a></li>
+            <li class="nav-item mb-2"><a href="https://trecentobolognese.archiui.com/mostre/prova"
+                class="nav-link p-0 text-white" target="_blank">Exhibition</a></li>
           </ul>
         </div>
+
 
         <div class="col-2">
           <h5>Licence</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"> This work is distribuited with Creative Commons Licence Attribution - Non commercial- Non opere derivate 3.0 Unported.</a></li>
+            <li class="nav-item mb-2">This work is distribuited with Creative Commons Licence Attribution - Non
+              commercial- No derives 3.0 Unported.</li>
           </ul>
         </div>
 
         <div class="col-2">
           <h5>Contacts</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Student: Martina Trocano</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Professor: Francesca Tomasi</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Exam: Digital Humanities and Cultural Heritage</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Academic Year 2021/2022</a></li>
+          <ul class="nav flex-column text-white">
+            <li class="nav-item mb-2">Student: Martina Trocano</li>
+            <li class="nav-item mb-2">Professor: Francesca Tomasi</li>
+            <li class="nav-item mb-2">Exam: Digital Humanities and Cultural
+              Heritage</li>
+            <li class="nav-item mb-2">Academic Year 2021/2022</li>
           </ul>
         </div>
 
@@ -277,7 +288,7 @@
             <div class="d-flex w-100 gap-2">
               <label for="newsletter1" class="visually-hidden">Email address</label>
               <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-              <button class="btn btn-primary" type="button">Subscribe</button>
+              <button class="btn btn-primary btn-themed-primary" type="button">Subscribe</button>
             </div>
           </form>
         </div>
@@ -299,10 +310,10 @@
       </div>
     </footer>
   </div>
-  
-  
+
+
   <!-- script, file in cui definiamo i nostri comportamenti personalizzati-->
-  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="script/tagcloud.js"></script>
 </body>
 
 </html>

@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--utilizziamo CVA per identificare la nostra libreria digitale-->
+    <!--utilizziamo CVA per identificare la nostra libreria digitale-->
     <library xmlns:dc="http://purl.org/dc/elements/1.1/" xml:id="CVA">
-<!--con author classifichiamo gli autori e CVA 02 identifichiamo il secondo autore della pagina -->
+        <!--con author classifichiamo gli autori e CVA 02 identifichiamo il secondo autore della pagina -->
         <author xml:id="CVA-02">
-<!--con txt classifichiamo i testi della pagina e con CVA 02-01 identifichiamo l'opera dell'autore-->
-        <text xml:id="CVA-02-01">
-        <dc:title>Le Madonne di Vitale: pittura e devozione a Bologna nel Trecento: Museo civico Medievale </dc:title>
-        <dc:creator>Massimo Medica</dc:creator>
-        <dc:date>2010</dc:date>
-        <dc:subject> Art</dc:subject>
-        <dc:subject>Italian Painting</dc:subject>
-        <dc:subject>Exhibition</dc:subject>
-        <dc:subject>Gothic Painting</dc:subject>
-        <dc:description>Catalogue of the exhibition "Le Madonne di Vitale" 
-        curated by Massimo Medica in Ferrara in 2010 - 72 p. : ill. ; 22 cm</dc:description>
-        <dc:publisher>Edisai</dc:publisher>
-        <!-- per type abbiamo utilizzato TEXT secondo il DCMI type vocabulary-->
-        <dc:type>Text</dc:type>
-        <dc:format> PhysicalBook: Biblioteca delle Arti - Sezione Arti Visive 'I. Supino' 
-        https://sol.unibo.it/SebinaOpac/resource/le-madonne-di-vitale-pittura-e-devozione-a-bologna-nel-trecento-museo-civico-medievale-20-novembre-2/UBO3447668#</dc:format>
-        <dc:identifier>ISBN: 9788896714010
-        889671401X</dc:identifier>
-        <dc:language>it-IT</dc:language>
-        <!-- in Coverage abbiamo utilizzato un identificativo spaziale secondo lo standard del GETTY-->
-        <dc:coverage>http://vocab.getty.edu/page/tgn/7003128</dc:coverage>
-        <dc:rights></dc:rights>
-    </text>
-    </author>
-</library>
+            <!--con txt classifichiamo i testi della pagina e con CVA 02-01 identifichiamo l'opera dell'autore-->
+            <text xml:id="CVA-02-01">
+                <dc:title>Le Madonne di Vitale: pittura e devozione a Bologna nel Trecento: Museo civico Medievale </dc:title>
+                <dc:creator>Massimo Medica</dc:creator>
+                <dc:date>2010</dc:date>
+                <dc:subject> Art</dc:subject>
+                <dc:subject>Italian Painting</dc:subject>
+                <dc:subject>Exhibition</dc:subject>
+                <dc:subject>Gothic Painting</dc:subject>
+                <dc:description>Catalogue of the exhibition "Le Madonne di Vitale" 
+                curated by Massimo Medica in Ferrara in 2010 - 72 p. : ill. ; 22 cm</dc:description>
+                <dc:publisher>Edisai</dc:publisher>
+                <!-- per type abbiamo utilizzato TEXT secondo il DCMI type vocabulary-->
+                <dc:type>Text</dc:type>
+                <dc:format> PhysicalBook: Biblioteca delle Arti - Sezione Arti Visive 'I. Supino' 
+                https://sol.unibo.it/SebinaOpac/resource/le-madonne-di-vitale-pittura-e-devozione-a-bologna-nel-trecento-museo-civico-medievale-20-novembre-2/UBO3447668#</dc:format>
+                <dc:identifier>ISBN: 9788896714010
+                889671401X</dc:identifier>
+                <dc:language>it-IT</dc:language>
+                <!-- in Coverage abbiamo utilizzato un identificativo spaziale secondo lo standard del GETTY-->
+                <dc:coverage>http://vocab.getty.edu/page/tgn/7003128</dc:coverage>
+                <dc:rights></dc:rights>
+            </text>
+        </author>
+    </library>
