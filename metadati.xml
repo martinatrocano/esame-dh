@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
     <!--utilizziamo CVA per identificare la nostra libreria digitale-->
     <library xmlns:dc="http://purl.org/dc/elements/1.1/" xml:id="CVA">
         <!--con author classifichiamo gli autori e CVA 02 identifichiamo il secondo autore della pagina -->
@@ -7,10 +6,7 @@
             <!--con txt classifichiamo i testi della pagina e con CVA 02-01 identifichiamo l'opera dell'autore-->
             <text xml:id="CVA-02-01">
                 <dc:title>Le Madonne di Vitale: pittura e devozione a Bologna nel Trecento: Museo civico Medievale </dc:title>
-                     <rdf:Description rdf:about="http://info:lccn/2010025398">
-                <dc:creator>Massimo Medica rdf:resource="http://viaf.org/viaf/4773445/#Medica,_Massimo""/>
-                    </rdf:Description>
-                </dc:creator>
+                <dc:creator>Massimo Medica</dc:creator>
                 <dc:date>2010</dc:date>
                 <dc:subject> Art</dc:subject>
                 <dc:subject>Italian Painting</dc:subject>
