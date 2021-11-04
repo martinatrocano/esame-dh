@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF
+
     <!--utilizziamo CVA per identificare la nostra libreria digitale-->
     <library xmlns:dc="http://purl.org/dc/elements/1.1/" xml:id="CVA">
         <!--con author classifichiamo gli autori e CVA 02 identifichiamo il secondo autore della pagina -->
@@ -32,4 +32,4 @@
             </text>
         </author>
     </library>
-    </rdf:RDF>
+   
